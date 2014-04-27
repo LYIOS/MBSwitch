@@ -60,7 +60,6 @@
     _pressed = NO;
     _dragging = NO;
     
-    
     _backLayer = [[CAShapeLayer layer] retain];
     _backLayer.backgroundColor = [[UIColor clearColor] CGColor];
     _backLayer.frame = self.bounds;
@@ -79,7 +78,6 @@
     [_fillLayer setValue:[NSNumber numberWithBool:YES] forKey:@"isVisible"];
     _fillLayer.fillColor = [[UIColor whiteColor] CGColor];
     [self.layer addSublayer:_fillLayer];
-    
     
     _thumbLayer = [[CAShapeLayer layer] retain];
     _thumbLayer.backgroundColor = [[UIColor clearColor] CGColor];
